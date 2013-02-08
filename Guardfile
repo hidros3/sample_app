@@ -3,8 +3,11 @@
 require 'active_support/core_ext'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 guard 'rspec', :version => 2, :all_after_pass => false, :cli => '--drb' do
 =======
+=======
+>>>>>>> filling-in-layout
 guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
@@ -30,7 +33,10 @@ guard 'rspec', :version => 2, :all_after_pass => false, :cli => '--drb' do
                        "spec/requests/#{m[1].singularize}_pages_spec.rb")
   end
 
+<<<<<<< HEAD
 >>>>>>> 0f5fb8dc28996f7b553bd5f9e053cc4eb702f549
+=======
+>>>>>>> filling-in-layout
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
@@ -50,6 +56,7 @@ guard 'rspec', :version => 2, :all_after_pass => false, :cli => '--drb' do
   watch(%r{^spec/acceptance/(.+)\.feature$})
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
 <<<<<<< HEAD
+<<<<<<< HEAD
 end
 
 
@@ -67,3 +74,6 @@ end
 =======
 end
 >>>>>>> 0f5fb8dc28996f7b553bd5f9e053cc4eb702f549
+=======
+end
+>>>>>>> filling-in-layout
